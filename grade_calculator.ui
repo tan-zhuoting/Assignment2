@@ -46,7 +46,23 @@
          </widget>
         </item>
         <item>
-         <widget class="QComboBox" name="comboBox"/>
+         <widget class="QComboBox" name="course_comboBox">
+          <item>
+           <property name="text">
+            <string>PIC 10A. Intro to Programing</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>CHEM 110A. Thermodynamics</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>MATH 32B. Vector Calculus</string>
+           </property>
+          </item>
+         </widget>
         </item>
        </layout>
       </item>
@@ -78,13 +94,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox"/>
+             <widget class="QSpinBox" name="spinBox">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -112,13 +135,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_2">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_2"/>
+             <widget class="QSpinBox" name="spinBox_2">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -146,13 +176,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_3">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_3"/>
+             <widget class="QSpinBox" name="spinBox_3">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -180,13 +217,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_4">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_4"/>
+             <widget class="QSpinBox" name="spinBox_4">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -214,13 +258,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_5">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_5"/>
+             <widget class="QSpinBox" name="spinBox_5">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -248,13 +299,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_6">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_6"/>
+             <widget class="QSpinBox" name="spinBox_6">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -282,13 +340,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_7">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_7"/>
+             <widget class="QSpinBox" name="spinBox_7">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -316,13 +381,20 @@
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_8">
+              <property name="maximum">
+               <number>100</number>
+              </property>
               <property name="orientation">
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
             </item>
             <item>
-             <widget class="QSpinBox" name="spinBox_8"/>
+             <widget class="QSpinBox" name="spinBox_8">
+              <property name="maximum">
+               <number>100</number>
+              </property>
+             </widget>
             </item>
            </layout>
           </item>
@@ -425,6 +497,12 @@
             <property name="text">
              <string>Schema A</string>
             </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
            </widget>
           </item>
           <item>
@@ -432,6 +510,9 @@
             <property name="text">
              <string>Schema B</string>
             </property>
+            <attribute name="buttonGroup">
+             <string notr="true">buttonGroup</string>
+            </attribute>
            </widget>
           </item>
           <item>
@@ -487,4 +568,7 @@
  </widget>
  <resources/>
  <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
 </ui>
