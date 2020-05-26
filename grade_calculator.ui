@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>761</width>
+    <width>916</width>
     <height>694</height>
    </rect>
   </property>
@@ -14,7 +14,7 @@
    <string>grade_calculator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_11">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_3">
       <item>
@@ -24,8 +24,8 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>17</width>
+          <height>18</height>
          </size>
         </property>
        </spacer>
@@ -41,7 +41,7 @@
            </sizepolicy>
           </property>
           <property name="text">
-           <string>TextLabel</string>
+           <string>Course:</string>
           </property>
          </widget>
         </item>
@@ -57,14 +57,14 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>17</width>
+          <height>13</height>
          </size>
         </property>
        </spacer>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_9">
+       <layout class="QHBoxLayout" name="horizontalLayout_11">
         <item>
          <layout class="QVBoxLayout" name="verticalLayout">
           <item>
@@ -72,22 +72,9 @@
             <item>
              <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 1</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider">
@@ -95,19 +82,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox"/>
@@ -132,22 +106,9 @@
             <item>
              <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 2</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_2">
@@ -155,19 +116,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_2"/>
@@ -192,22 +140,9 @@
             <item>
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 3</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_5">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_3">
@@ -215,19 +150,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_6">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_3"/>
@@ -252,22 +174,9 @@
             <item>
              <widget class="QLabel" name="label_5">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 4</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_7">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_4">
@@ -275,19 +184,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_8">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_4"/>
@@ -312,22 +208,9 @@
             <item>
              <widget class="QLabel" name="label_6">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 5</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_9">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_5">
@@ -335,19 +218,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_10">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_5"/>
@@ -372,22 +242,9 @@
             <item>
              <widget class="QLabel" name="label_7">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 6</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_11">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_6">
@@ -395,19 +252,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_12">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_6"/>
@@ -432,22 +276,9 @@
             <item>
              <widget class="QLabel" name="label_8">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 7</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_13">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_7">
@@ -455,19 +286,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_14">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_7"/>
@@ -492,22 +310,9 @@
             <item>
              <widget class="QLabel" name="label_9">
               <property name="text">
-               <string>TextLabel</string>
+               <string>Hw 8</string>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_15">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSlider" name="horizontalSlider_8">
@@ -515,19 +320,6 @@
                <enum>Qt::Horizontal</enum>
               </property>
              </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_16">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
             </item>
             <item>
              <widget class="QSpinBox" name="spinBox_8"/>
@@ -541,7 +333,7 @@
           <item>
            <widget class="QLabel" name="label_10">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Midterm 1</string>
             </property>
            </widget>
           </item>
@@ -571,7 +363,7 @@
           <item>
            <widget class="QLabel" name="label_11">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Midterm 2</string>
             </property>
            </widget>
           </item>
@@ -601,7 +393,7 @@
           <item>
            <widget class="QLabel" name="label_12">
             <property name="text">
-             <string>TextLabel</string>
+             <string>Final Exam</string>
             </property>
            </widget>
           </item>
@@ -631,36 +423,34 @@
           <item>
            <widget class="QRadioButton" name="radioButton">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Schema A</string>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QRadioButton" name="radioButton_2">
             <property name="text">
-             <string>RadioButton</string>
+             <string>Schema B</string>
             </property>
            </widget>
           </item>
           <item>
-           <spacer name="verticalSpacer_11">
-            <property name="orientation">
-             <enum>Qt::Vertical</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>20</width>
-              <height>40</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item>
-           <widget class="QLabel" name="label_13">
-            <property name="text">
-             <string>TextLabel</string>
-            </property>
-           </widget>
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QLabel" name="label_13">
+              <property name="text">
+               <string>Overall Score:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>0.0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </item>
          </layout>
         </item>
@@ -673,8 +463,8 @@
         </property>
         <property name="sizeHint" stdset="0">
          <size>
-          <width>20</width>
-          <height>40</height>
+          <width>17</width>
+          <height>18</height>
          </size>
         </property>
        </spacer>
@@ -688,7 +478,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>761</width>
+     <width>916</width>
      <height>23</height>
     </rect>
    </property>
