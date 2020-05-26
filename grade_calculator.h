@@ -10,14 +10,7 @@ QT_END_NAMESPACE
 
 struct CourseData
 {
-    int hw1 = 0;
-    int hw2 = 0;
-    int hw3 = 0;
-    int hw4 = 0;
-    int hw5 = 0;
-    int hw6 = 0;
-    int hw7 = 0;
-    int hw8 = 0;
+    int hw[8] = {0};
     int midterm1 = 0;
     int midterm2 = 0;
     int finalexam = 0;

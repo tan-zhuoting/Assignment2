@@ -20,13 +20,22 @@ void grade_calculator::update_overall()
 {
     CourseData& data = course_datas[ui->course_comboBox->currentIndex()];
     data.overall = 0.0;
+    double min_grade = data.hw[0];
+
+    for (int i = 0; i < 8; i++) {
+        if (data.hw[i] < min_grade) {
+            min_grade = data.hw[i];
+        }
+        data.overall += data.hw[i];
+    }
+    data.overall -= min_grade;
+    data.overall /= 7;
+    data.overall *= 0.25;
     if (data.schema == 1) {
-        data.overall += 0.25 * (data.hw1 + data.hw2 + data.hw3 + data.hw4 + data.hw5 + data.hw6 + data.hw7 + data.hw8);
         data.overall += 0.2 * data.midterm1;
         data.overall += 0.2 * data.midterm2;
         data.overall += 0.35 * data.finalexam;
     } else {
-        data.overall += 0.25 * (data.hw1 + data.hw2 + data.hw3 + data.hw4 + data.hw5 + data.hw6 + data.hw7 + data.hw8);
         data.overall += 0.3 * (data.midterm1 > data.midterm2 ? data.midterm1 : data.midterm2);
         data.overall += 0.44 * data.finalexam;
     }
@@ -36,22 +45,22 @@ void grade_calculator::update_overall()
 
 void grade_calculator::on_course_comboBox_activated(int index)
 {
-   ui->horizontalSlider->setValue(course_datas[index].hw1);
-   ui->spinBox->setValue(course_datas[index].hw1);
-   ui->horizontalSlider_2->setValue(course_datas[index].hw2);
-   ui->spinBox_2->setValue(course_datas[index].hw2);
-   ui->horizontalSlider_3->setValue(course_datas[index].hw3);
-   ui->spinBox_3->setValue(course_datas[index].hw3);
-   ui->horizontalSlider_4->setValue(course_datas[index].hw4);
-   ui->spinBox_4->setValue(course_datas[index].hw4);
-   ui->horizontalSlider_5->setValue(course_datas[index].hw5);
-   ui->spinBox_5->setValue(course_datas[index].hw5);
-   ui->horizontalSlider_6->setValue(course_datas[index].hw6);
-   ui->spinBox_6->setValue(course_datas[index].hw6);
-   ui->horizontalSlider_7->setValue(course_datas[index].hw7);
-   ui->spinBox_7->setValue(course_datas[index].hw7);
-   ui->horizontalSlider_8->setValue(course_datas[index].hw8);
-   ui->spinBox_8->setValue(course_datas[index].hw8);
+   ui->horizontalSlider->setValue(course_datas[index].hw[0]);
+   ui->spinBox->setValue(course_datas[index].hw[0]);
+   ui->horizontalSlider_2->setValue(course_datas[index].hw[1]);
+   ui->spinBox_2->setValue(course_datas[index].hw[1]);
+   ui->horizontalSlider_3->setValue(course_datas[index].hw[2]);
+   ui->spinBox_3->setValue(course_datas[index].hw[2]);
+   ui->horizontalSlider_4->setValue(course_datas[index].hw[3]);
+   ui->spinBox_4->setValue(course_datas[index].hw[3]);
+   ui->horizontalSlider_5->setValue(course_datas[index].hw[4]);
+   ui->spinBox_5->setValue(course_datas[index].hw[4]);
+   ui->horizontalSlider_6->setValue(course_datas[index].hw[5]);
+   ui->spinBox_6->setValue(course_datas[index].hw[5]);
+   ui->horizontalSlider_7->setValue(course_datas[index].hw[6]);
+   ui->spinBox_7->setValue(course_datas[index].hw[6]);
+   ui->horizontalSlider_8->setValue(course_datas[index].hw[7]);
+   ui->spinBox_8->setValue(course_datas[index].hw[7]);
    ui->horizontalSlider_9->setValue(course_datas[index].midterm1);
    ui->spinBox_9->setValue(course_datas[index].midterm1);
    ui->horizontalSlider_10->setValue(course_datas[index].midterm2);
@@ -69,112 +78,112 @@ void grade_calculator::on_course_comboBox_activated(int index)
 void grade_calculator::on_horizontalSlider_sliderMoved(int position)
 {
     ui->spinBox->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw1 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[0] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_2_sliderMoved(int position)
 {
     ui->spinBox_2->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw2 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[1] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_3_sliderMoved(int position)
 {
     ui->spinBox_3->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw3 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[2] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_4_sliderMoved(int position)
 {
     ui->spinBox_4->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw4 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[3] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_5_sliderMoved(int position)
 {
     ui->spinBox_5->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw5 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[4] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_6_sliderMoved(int position)
 {
     ui->spinBox_6->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw6 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[5] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_7_sliderMoved(int position)
 {
     ui->spinBox_7->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw7 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[6] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_horizontalSlider_8_sliderMoved(int position)
 {
     ui->spinBox_8->setValue(position);
-    course_datas[ui->course_comboBox->currentIndex()].hw8 = position;
+    course_datas[ui->course_comboBox->currentIndex()].hw[7] = position;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_valueChanged(int arg1)
 {
     ui->horizontalSlider->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw1 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[0] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_2_valueChanged(int arg1)
 {
     ui->horizontalSlider_2->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw2 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[1] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_3_valueChanged(int arg1)
 {
     ui->horizontalSlider_3->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw3 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[2] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_4_valueChanged(int arg1)
 {
     ui->horizontalSlider_4->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw4 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[3] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_5_valueChanged(int arg1)
 {
     ui->horizontalSlider_5->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw5 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[4] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_6_valueChanged(int arg1)
 {
     ui->horizontalSlider_6->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw6 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[5] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_7_valueChanged(int arg1)
 {
     ui->horizontalSlider_7->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw7 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[6] = arg1;
     emit compute_overall();
 }
 
 void grade_calculator::on_spinBox_8_valueChanged(int arg1)
 {
     ui->horizontalSlider_8->setValue(arg1);
-    course_datas[ui->course_comboBox->currentIndex()].hw8 = arg1;
+    course_datas[ui->course_comboBox->currentIndex()].hw[7] = arg1;
     emit compute_overall();
 }
 
