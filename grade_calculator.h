@@ -32,6 +32,11 @@ class grade_calculator : public QMainWindow
 public:
     grade_calculator(QWidget *parent = nullptr);
     ~grade_calculator();
+signals:
+    void compute_overall();
+private slots:
+    void update_overall();
+
 
 private slots:
     void on_course_comboBox_activated(int index);
@@ -79,6 +84,10 @@ private slots:
     void on_spinBox_10_valueChanged(int arg1);
 
     void on_spinBox_11_valueChanged(int arg1);
+
+    void on_radioButton_toggled(bool checked);
+
+    void on_radioButton_2_toggled(bool checked);
 
 private:
     Ui::grade_calculator *ui;
