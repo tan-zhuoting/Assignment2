@@ -411,13 +411,20 @@
           </item>
           <item>
            <widget class="QSlider" name="horizontalSlider_9">
+            <property name="maximum">
+             <number>100</number>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_9"/>
+           <widget class="QSpinBox" name="spinBox_9">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="verticalSpacer">
@@ -441,13 +448,20 @@
           </item>
           <item>
            <widget class="QSlider" name="horizontalSlider_10">
+            <property name="maximum">
+             <number>100</number>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_10"/>
+           <widget class="QSpinBox" name="spinBox_10">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="verticalSpacer_9">
@@ -471,13 +485,20 @@
           </item>
           <item>
            <widget class="QSlider" name="horizontalSlider_11">
+            <property name="maximum">
+             <number>100</number>
+            </property>
             <property name="orientation">
              <enum>Qt::Horizontal</enum>
             </property>
            </widget>
           </item>
           <item>
-           <widget class="QSpinBox" name="spinBox_11"/>
+           <widget class="QSpinBox" name="spinBox_11">
+            <property name="maximum">
+             <number>100</number>
+            </property>
+           </widget>
           </item>
           <item>
            <spacer name="verticalSpacer_10">
